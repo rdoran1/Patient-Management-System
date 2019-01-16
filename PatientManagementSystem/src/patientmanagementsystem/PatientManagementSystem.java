@@ -5,6 +5,8 @@
  */
 package patientmanagementsystem;
 
+import GUI.GUI;
+
 /**
  *
  * @author rdoran1
@@ -16,7 +18,8 @@ public class PatientManagementSystem {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        GUI gui = new GUI();
+        gui.setVisible(true);
     }
     
 }

@@ -118,8 +118,8 @@ public class GUI extends javax.swing.JFrame {
 
     private void CreateAccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateAccountButtonActionPerformed
         // TODO add your handling code here:
-        NewAccount newAccount = new NewAccount();
-        newAccount.setVisible(true);
+        AccountDefinition accountType = new AccountDefinition();
+        accountType.setVisible(true);
     }//GEN-LAST:event_CreateAccountButtonActionPerformed
 
     /**
