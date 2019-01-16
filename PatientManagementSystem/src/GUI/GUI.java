@@ -57,6 +57,11 @@ public class GUI extends javax.swing.JFrame {
 
         CreateAccountButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         CreateAccountButton.setText("Create Account");
+        CreateAccountButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CreateAccountButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -87,7 +92,7 @@ public class GUI extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(34, 34, 34)
                 .addComponent(LoginLabel)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -101,7 +106,7 @@ public class GUI extends javax.swing.JFrame {
                 .addComponent(LoginButton)
                 .addGap(18, 18, 18)
                 .addComponent(CreateAccountButton)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         pack();
@@ -110,6 +115,12 @@ public class GUI extends javax.swing.JFrame {
     private void UsernameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsernameFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_UsernameFieldActionPerformed
+
+    private void CreateAccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateAccountButtonActionPerformed
+        // TODO add your handling code here:
+        NewAccount newAccount = new NewAccount();
+        newAccount.setVisible(true);
+    }//GEN-LAST:event_CreateAccountButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -144,6 +155,7 @@ public class GUI extends javax.swing.JFrame {
                 new GUI().setVisible(true);
             }
         });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

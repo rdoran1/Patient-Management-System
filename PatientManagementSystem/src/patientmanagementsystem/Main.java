@@ -9,6 +9,7 @@ package patientmanagementsystem;
  *
  * @author rdoran1
  */
-public class Main {
+public class Main 
+{
     
 }
