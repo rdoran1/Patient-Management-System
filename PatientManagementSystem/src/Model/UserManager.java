@@ -18,8 +18,11 @@ public class UserManager
    
    private List<User> UserList = new ArrayList<>();
    
+   
+   
    public static UserManager getInstance()
    {
+       
        if(singleton == null)
        {
            singleton = new UserManager();
@@ -33,9 +36,4 @@ public class UserManager
        return UserList.add(user);
    }
    
-   public void displaydata(){
-       for(int i = 0; i < UserList.size(); i++){
-       System.out.println(UserList.get(i));
-       }
-   }
 }

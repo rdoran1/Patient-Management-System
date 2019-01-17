@@ -25,7 +25,8 @@ public abstract class User {
         this.Address = Address;
         this.Password = Password;
     }
-
+    
+    
     public String getName() {
         return Name;
     }

@@ -6,8 +6,6 @@
 package patientmanagementsystem;
 
 import GUI.GUI;
-import Model.Patient;
-import Model.User;
 
 /**
  *
