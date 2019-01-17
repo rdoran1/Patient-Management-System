@@ -5,9 +5,8 @@
  */
 package Model;
 
-import java.awt.List;
+import java.util.List;
 import java.util.ArrayList;
-
 
 /**
  *
@@ -17,7 +16,7 @@ public class UserManager
 {
    public static UserManager singleton;
    
-   private ArrayList<User> UserList = new ArrayList<>();
+   private List<User> UserList = new ArrayList<>();
    
    public static UserManager getInstance()
    {
@@ -31,6 +30,6 @@ public class UserManager
    
    public boolean register(User user)
    {
-       
+       return UserList.add(user);
    }
 }
