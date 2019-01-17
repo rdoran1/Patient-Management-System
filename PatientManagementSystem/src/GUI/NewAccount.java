@@ -201,22 +201,21 @@ public class NewAccount extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void SexBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SexBoxActionPerformed
-        // TODO add your handling code here:
-       Sex = (String)SexBox.getSelectedItem();
+        // TODO add your handling code here
     }//GEN-LAST:event_SexBoxActionPerformed
 
     private void CreateAccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateAccountButtonActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:        System.out.println(Name);
+        Name = NameField.getText();
+        Surname = LastNameField.getText();
+        Age = AgeField.getText();
+        Password = PasswordField.getText();
+        Sex = (String)SexBox.getSelectedItem();
         User input = new Patient(Name, Surname, Sex, Age, Address, Password);
-        System.out.println(Name);
-        System.out.println(Surname);
-        System.out.println(Sex);
-        System.out.println(Age);
-        System.out.println(Address);
-        System.out.println(Password);
         NameField.setText(null);
         LastNameField.setText(null);
         AgeField.setText(null);
+        Address = AddressField.getText();
         AddressField.setText(null);
         PasswordField.setText(null);
         SexBox.setSelectedIndex(0);
@@ -228,27 +227,24 @@ public class NewAccount extends javax.swing.JFrame {
     
     private void NameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NameFieldActionPerformed
         // TODO add your handling code here:
-        Name = NameField.getText();
     }//GEN-LAST:event_NameFieldActionPerformed
 
     private void LastNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastNameFieldActionPerformed
         // TODO add your handling code here:
-        Surname = LastNameField.getText();
     }//GEN-LAST:event_LastNameFieldActionPerformed
 
     private void AgeFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgeFieldActionPerformed
-        // TODO add your handling code here:
-        Age = AgeField.getText();
+
     }//GEN-LAST:event_AgeFieldActionPerformed
 
     private void AddressFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddressFieldActionPerformed
         // TODO add your handling code here:
-        Address = AddressField.getText();
+
     }//GEN-LAST:event_AddressFieldActionPerformed
 
     private void PasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordFieldActionPerformed
         // TODO add your handling code here:
-        Password = PasswordField.getText();
+
     }//GEN-LAST:event_PasswordFieldActionPerformed
 
     /**
