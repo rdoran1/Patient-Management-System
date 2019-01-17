@@ -11,8 +11,8 @@ package Model;
  */
 public class Patient extends User{
 
-    public Patient(String Name, String Surname) {
-        super(Name, Surname);
+    public Patient(String Name, String Surname, String Sex, String Age, String Address, String Password) {
+        super(Name, Surname, Sex, Age, Address, Password);
     }
     
 }

@@ -23,8 +23,6 @@ public class PatientManagementSystem {
         GUI gui = new GUI();
         gui.setVisible(true);
         
-        User example = new Patient("BILL", "SMITH");
-        
         
     }
     

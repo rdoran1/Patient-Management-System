@@ -5,12 +5,21 @@
  */
 package GUI;
 
+import Model.Patient;
+import Model.User;
+
 /**
  *
  * @author rdoran1
  */
 public class NewAccount extends javax.swing.JFrame {
 
+    public String Name;
+    public String Surname;
+    public String Sex;
+    public String Age;
+    public String Address;
+    public String Password;
     /**
      * Creates new form NewAccount
      */
@@ -56,6 +65,12 @@ public class NewAccount extends javax.swing.JFrame {
         AddressLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         AddressLabel.setText("Address:");
 
+        AddressField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddressFieldActionPerformed(evt);
+            }
+        });
+
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setText("Sex:");
 
@@ -69,6 +84,12 @@ public class NewAccount extends javax.swing.JFrame {
 
         AgeLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         AgeLabel.setText("Age:");
+
+        AgeField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AgeFieldActionPerformed(evt);
+            }
+        });
 
         CreateAccountButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         CreateAccountButton.setText("Create Account");
@@ -84,8 +105,20 @@ public class NewAccount extends javax.swing.JFrame {
         LastNameLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         LastNameLabel.setText("Last Name:");
 
+        LastNameField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LastNameFieldActionPerformed(evt);
+            }
+        });
+
         PasswordLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         PasswordLabel.setText("Password:");
+
+        PasswordField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PasswordFieldActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -169,15 +202,54 @@ public class NewAccount extends javax.swing.JFrame {
 
     private void SexBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SexBoxActionPerformed
         // TODO add your handling code here:
+       Sex = (String)SexBox.getSelectedItem();
     }//GEN-LAST:event_SexBoxActionPerformed
 
     private void CreateAccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateAccountButtonActionPerformed
         // TODO add your handling code here:
+        User input = new Patient(Name, Surname, Sex, Age, Address, Password);
+        System.out.println(Name);
+        System.out.println(Surname);
+        System.out.println(Sex);
+        System.out.println(Age);
+        System.out.println(Address);
+        System.out.println(Password);
+        NameField.setText(null);
+        LastNameField.setText(null);
+        AgeField.setText(null);
+        AddressField.setText(null);
+        PasswordField.setText(null);
+        SexBox.setSelectedIndex(0);
+        GUI newLogin = new GUI();
+        newLogin.setVisible(true);
+        setVisible(false);
     }//GEN-LAST:event_CreateAccountButtonActionPerformed
 
+    
     private void NameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NameFieldActionPerformed
         // TODO add your handling code here:
+        Name = NameField.getText();
     }//GEN-LAST:event_NameFieldActionPerformed
+
+    private void LastNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastNameFieldActionPerformed
+        // TODO add your handling code here:
+        Surname = LastNameField.getText();
+    }//GEN-LAST:event_LastNameFieldActionPerformed
+
+    private void AgeFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgeFieldActionPerformed
+        // TODO add your handling code here:
+        Age = AgeField.getText();
+    }//GEN-LAST:event_AgeFieldActionPerformed
+
+    private void AddressFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddressFieldActionPerformed
+        // TODO add your handling code here:
+        Address = AddressField.getText();
+    }//GEN-LAST:event_AddressFieldActionPerformed
+
+    private void PasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordFieldActionPerformed
+        // TODO add your handling code here:
+        Password = PasswordField.getText();
+    }//GEN-LAST:event_PasswordFieldActionPerformed
 
     /**
      * @param args the command line arguments

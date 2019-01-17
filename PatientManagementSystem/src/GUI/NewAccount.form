@@ -144,6 +144,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="AddressField">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddressFieldActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
@@ -183,6 +186,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="AgeField">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AgeFieldActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="CreateAccountButton">
       <Properties>
@@ -212,6 +218,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="LastNameField">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LastNameFieldActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="PasswordLabel">
       <Properties>
@@ -222,6 +231,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="PasswordField">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PasswordFieldActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
