@@ -47,6 +47,12 @@ public class NewAccount extends javax.swing.JFrame {
         NameLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         NameLabel.setText("First Name:");
 
+        NameField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NameFieldActionPerformed(evt);
+            }
+        });
+
         AddressLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         AddressLabel.setText("Address:");
 
@@ -168,6 +174,10 @@ public class NewAccount extends javax.swing.JFrame {
     private void CreateAccountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateAccountButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CreateAccountButtonActionPerformed
+
+    private void NameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NameFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NameFieldActionPerformed
 
     /**
      * @param args the command line arguments

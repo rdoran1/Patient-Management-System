@@ -6,6 +6,8 @@
 package patientmanagementsystem;
 
 import GUI.GUI;
+import Model.Patient;
+import Model.User;
 
 /**
  *
@@ -20,6 +22,10 @@ public class PatientManagementSystem {
         // TODO code application logic here
         GUI gui = new GUI();
         gui.setVisible(true);
+        
+        User example = new Patient("BILL", "SMITH");
+        
+        
     }
     
 }
